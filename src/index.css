@@ -1,13 +1,144 @@
+/* Global Styles */
 body {
+  font-family: 'Arial', sans-serif; /* Twitter uses a similar font */
+  background-color: #f5f8fa; /* Twitter's light blue background */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  background-image: url(photo.avif);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Centered App */
+.app {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.app:hover {
+  transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1da1f2; /* Twitter's signature blue */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button {
+  background-color: #1da1f2; /* Twitter's blue */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #0d95e8;
+}
+
+/* Tweet Form */
+.tweet-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  resize: none;
+  outline: none;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.tweet-form button {
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+/* Tweet List */
+.tweet-list {
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* Individual Tweet (Card-like design) */
+.tweet-item {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Card shadow effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.tweet-item:hover {
+  transform: translateY(-5px); /* Floating effect on hover */
+}
+
+/* Tweet Meta (timestamp, like, delete buttons) */
+.tweet-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.tweet-meta span {
+  color: #aaa;
+}
+
+.tweet-meta button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tweet-meta button:hover {
+  color: #1da1f2;
+}
+
+/* Profile Picture */
+.tweet-item .profile-pic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .tweet-form button {
+    font-size: 16px;
+  }
+  .tweet-item {
+    padding: 15px;
+  }
 }
