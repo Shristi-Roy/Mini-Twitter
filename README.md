@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Mini Twitter App
 
 A simple Twitter clone built with React.js featuring interactive elements like dark/light mode, heart reactions, tweet deletion, and a search option. This project provides a fun way to simulate the experience of using Twitter.
