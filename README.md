@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mini Twitter App
 
 A simple Twitter clone built with React.js featuring interactive elements like dark/light mode, heart reactions, tweet deletion, and a search option. This project provides a fun way to simulate the experience of using Twitter.
@@ -20,3 +21,7 @@ A simple Twitter clone built with React.js featuring interactive elements like d
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/mini-twitter-app.git
+=======
+# Mini-Twitter
+A Mini Twitter clone built with React.js that includes features such as dark and light mode, heart reactions, tweet deletion, and a search option. It's a simple, interactive web app designed to simulate the functionality of Twitter without the backend integration.
+>>>>>>> 5a0d9743c7587d02c63369bbe92956441e1ba400
